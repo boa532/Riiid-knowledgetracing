@@ -10,29 +10,29 @@
 ## 사용 데이터
 Riiid Answer Correctness Prediction 데이터(https://www.kaggle.com/c/riiid-test-answer-prediction)
 1. train : 유저데이터(101M) / 유저데이터의 크기가 너무 크기 때문에 전체 사용자의 약 10%인 4000명의 유저 데이터만 이용함(총 1,069,559개)
-  - row_id 
-  - timestamp : 처음 인터렉션(강의 혹은 문제풀이) 이용한 뒤 경과시간 millisecond
-  - user_id : 사용자 id
-  - content_id : 유저 인터렉션 컨텐츠 id(강의이거나 문제일 수 있음)
-  - content_type_id : 컨텐츠가 1= 강의시청, 0=문제풀이
-  - task_container_id : 컨텐츠 묶음 id
-  - user_answer : 사용자 입력 답
-  - answered_correctly : 0=오답 1=정답
-  - prior_question_elapsed_time : 이전 문제풀이에 걸린 시간
-  - prior_question_had_explanation : 이전 문제풀이 후 강의 시청 여부
+    - row_id 
+    - timestamp : 처음 인터렉션(강의 혹은 문제풀이) 이용한 뒤 경과시간 millisecond
+    - user_id : 사용자 id
+    - content_id : 유저 인터렉션 컨텐츠 id(강의이거나 문제일 수 있음)
+    - content_type_id : 컨텐츠가 1= 강의시청, 0=문제풀이
+    - task_container_id : 컨텐츠 묶음 id
+    - user_answer : 사용자 입력 답
+    - answered_correctly : 0=오답 1=정답
+    - prior_question_elapsed_time : 이전 문제풀이에 걸린 시간
+    - prior_question_had_explanation : 이전 문제풀이 후 강의 시청 여부
 
 2. questions : 문제 데이터(13.5K)
-  - question_id : 문제 id
-  - bundle_id : 문제 묶음 id
-  - correct_answer : 정답
-  - part : 토익 파트(1,2,3,4,5,6,7)
-  - tags : 문제 태그(구체적인 내용은 없음)
+    - question_id : 문제 id
+    - bundle_id : 문제 묶음 id
+    - correct_answer : 정답
+    - part : 토익 파트(1,2,3,4,5,6,7)
+    - tags : 문제 태그(구체적인 내용은 없음)
  
 3. lectures :강의 데이터(418)
-  - lecture_id : 강의 id
-  - part : 토익 파트
-  - tag : 강의 태그 
-  - type_of : 간단한 강의 목적
+    - lecture_id : 강의 id
+    - part : 토익 파트
+    - tag : 강의 태그 
+    - type_of : 간단한 강의 목적
 
 
 ## 가설
